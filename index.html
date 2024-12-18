@@ -3,68 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Letterhead</title>
+    <title>Company Letterhead</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            color: #333;
         }
+
+        .letterhead-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
-            border-bottom: 2px solid #0053A6;
-            background-color: #f1f1f1;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
-        .company-details {
-            text-align: left;
-        }
+
         .logo {
+            max-height: 80px;
+            width: auto;
+        }
+
+        .company-details {
             text-align: right;
+            font-size: 12px;
+            line-height: 1.5;
         }
+
         .content {
-            margin: 30px;
-            line-height: 1.6;
+            margin-top: 20px;
+            font-size: 14px;
         }
+
         .footer {
-            margin: 30px;
+            margin-top: 30px;
             font-size: 12px;
             text-align: center;
-            color: #777;
-            border-top: 2px solid #0053A6;
+            border-top: 1px solid #ccc;
             padding-top: 10px;
+            color: #777;
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <div class="header">
-        <div class="company-details">
-            <h1 style="margin: 0;">South Africas Legal Practitioners (Pty) Ltd</h1>
-            <p>Enterprise Number: 2024/775693/07</p>
-            <p>Email: <a href="mailto:MELISSAMAY1407@GMAIL.COM">MELISSAMAY1407@GMAIL.COM</a></p>
-            <p>Date: 03/12/2024</p>
+    <div class="letterhead-container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="logo.PNG" alt="Company Logo" class="logo">
+            <div class="company-details">
+                <strong>Company Name</strong><br>
+                Registration Number: 2024/XXXXXXX/07<br>
+                VAT Number: 1234567890<br>
+                Address: 123 Business Street, City, Province, ZIP Code<br>
+                Phone: +27 12 345 6789<br>
+                Email: info@companyemail.com<br>
+                Date: 18/12/2024
+            </div>
         </div>
-        <div class="logo">
-            <logo.PNG>
-            <img src="company-logo.png" alt="Company Logo" width="100">
+
+        <!-- Content Section -->
+        <div class="content">
+            <p><strong>Subject:</strong> [Enter Subject Here]</p>
+            <p>Dear [Recipient's Name],</p>
+            <p>
+                This is a placeholder for the letter content. You can insert your custom message here 
+                as per the company's needs. Keep the tone formal and professional.
+            </p>
+            <p>
+                If you have any questions or require further information, feel free to reach out using 
+                the contact details provided above.
+            </p>
+            <p>Sincerely,<br><br>
+                <strong>[Your Name]</strong><br>
+                [Your Position]<br>
+                Company Name
+            </p>
         </div>
-    </div>
 
-    <!-- Main Content -->
-    <div class="content">
-        <p>Dear Business Owner,</p>
-        <p><strong>WHAT TO DO AFTER REGISTERING A COMPANY</strong></p>
-        <p>Congratulations on registering your company. The Companies and Intellectual Property Commission (CIPC) wishes you all the best in your business endeavours.</p>
-        <p>... [Insert more content here based on your document] ...</p>
-    </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        <p>Contact Us: 086 100 2472 | Visit: <a href="https://www.cipc.co.za">www.cipc.co.za</a></p>
-        <p>PO Box 429, Pretoria, 0001, Republic of South Africa | Docex 256, Pretoria</p>
+        <!-- Footer Section -->
+        <div class="footer">
+            Company Name | Registration Number: 2024/XXXXXXX/07 | VAT Number: 1234567890<br>
+            Address: 123 Business Street, City, Province, ZIP Code | Phone: +27 12 345 6789 | Email: info@companyemail.com
+        </div>
     </div>
 </body>
 </html>
